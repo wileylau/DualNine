@@ -29,7 +29,7 @@ ifelse(
     ui_print("");
     ui_print("");
     ui_print("Switching slots...");
-    run_program("/cache/dualnine/backup.sh");
+    run_program("/cache/dualnine/restore.sh");
 
   ),
   (
@@ -40,7 +40,7 @@ ifelse(
 );
 
 ifelse(
-  getprop("ro.dualnine.active") == "1",
+  getprop("ro.dualnine.restore") == "1",
   (
     ui_print("");
     ui_print("");
