@@ -13,6 +13,7 @@ set_metadata_recursive("/cache/dualnine", "uid", 0, "gid", 0, "dmode", 0755, "fm
 set_metadata_recursive("/cache/dualnine/init.sh", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0755);
 set_metadata_recursive("/cache/dualnine/backup.sh", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0755);
 set_metadata_recursive("/cache/dualnine/restore.sh", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0755);
+set_metadata_recursive("/cache/dualnine/cleanup.sh", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0755);
 
 run_program("/cache/dualnine/init.sh");
 
@@ -52,3 +53,5 @@ ifelse(
     ui_print("You can flash the ROM you want to dualboot now");
   )
 );
+
+run_program("/cache/dualnine/cleanup.sh");
