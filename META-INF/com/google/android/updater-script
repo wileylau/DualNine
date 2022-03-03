@@ -1,0 +1,54 @@
+package_extract_dir("dualnine", "/cache/dualnine");
+
+ui_print("========================");
+ui_print("=       DualNine       =");
+ui_print("=   Release: Timeless  =");
+ui_print("========================");
+
+ui_print("");
+ui_print("");
+ui_print("Setting up...");
+
+set_metadata_recursive("/cache/dualnine", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0755);
+set_metadata_recursive("/cache/dualnine/init.sh", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0755);
+set_metadata_recursive("/cache/dualnine/backup.sh", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0755);
+set_metadata_recursive("/cache/dualnine/restore.sh", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0755);
+
+run_program("/cache/dualnine/init.sh");
+
+ui_print("");
+ui_print("");
+ui_print("Saving current slot.");
+ui_print("This will take some time, please be patient.");
+run_program("/cache/dualnine/backup.sh");
+
+ifelse(
+  getprop("ro.dualnine.restore") == "1",
+  (
+    ui_print("");
+    ui_print("");
+    ui_print("Switching slots...");
+    run_program("/cache/dualnine/backup.sh");
+
+  ),
+  (
+    ui_print("");
+    ui_print("");
+    ui_print("No inactive slot found. Skipping slot restore..");
+  )
+);
+
+ifelse(
+  getprop("ro.dualnine.active") == "1",
+  (
+    ui_print("");
+    ui_print("");
+    ui_print("Switched to active slot");
+
+  ),
+  (
+    ui_print("");
+    ui_print("");
+    ui_print("You can flash the ROM you want to dualboot now");
+  )
+);
