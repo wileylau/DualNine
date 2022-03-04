@@ -5,7 +5,7 @@
 ### Xiaomi ###
 | Device Model | Device Codename | Recovery Used | Android Version | Extra Notes |
 | :------------------- | :------------------- | :------------------- | :------------------- | :------------------- | 
-| Redmi 9 | lancelot (lava) | OrangeFox Recovery | 11 | May need to wipe dalvik / cache. |
+| Redmi 9 | lancelot (lava) | OrangeFox Recovery, SkyHawk Recovery | 11 | May need to wipe dalvik / cache. |
 | Redmi Note 9S | curtana (miatoll) | OrangeFox Recovery | 10 / 11 / 12 | / |
 
 
