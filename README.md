@@ -39,7 +39,7 @@ This ZIP allows devices to dualboot (or even multiBoot) different ROMs and diffe
 - Decrypt the ROM. (Important!)
 - Reboot, and profit. You have DualNine setupped.
 - To switch slots, reboot to recovery and flash DualNine ZIP again, and reboot. You will boot back into the inactive slot (the first ROM you flashed.)
-- How to switch DualBoot ROMs without resetup: soon
+- How to switch dualboot ROMs: soon
 - Note that erasing /data will WIPE the DualNine installation, and you'll have to reinstall again.
 - To remove dualnine, delete /data/dualnine or format data.
 
