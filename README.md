@@ -14,6 +14,8 @@ This ZIP allows devices to dualboot (or even multiBoot) different ROMs and diffe
 
 ### Devices Requirements ###
 - Unencrypted / decrypted storage
+- Devices that has dynamic partitions (check with[this app](https://play.google.com/store/apps/details?id=tk.hack5.treblecheck))
+    - Some devices that have retrofitted dynamic partitions (e.g. Redmi Note 8 Pro) are UNTESTED.
 - Minimum:
     - 8GB space in /data (may vary with super partition size)
 - Recommended:
