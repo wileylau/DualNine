@@ -1,7 +1,7 @@
 # DualNine - Dual Booting made easy #
 
 ### What is this? ###
-This ZIP allows devices to dualboot (or even multiBoot) different ROMs and different Android versions at ease.
+This ZIP allows devices to sort-of dualboot (or even multiBoot) different ROMs and different Android versions at ease.
 
 ### Advantages and features ###
 - Works for most devices (with dynamic partitions)
