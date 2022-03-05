@@ -17,3 +17,9 @@ fi
 
 mv /data/dualnine/active/data/* /data/
 rm -rf /data/dualnine/active/
+
+if [[ $SLOT == "_a" ]]; then
+    bootctl set-active-boot-slot 1
+elif [[ $SLOT == "_b" ]]; then
+    bootctl set-active-boot-slot 0
+fi
