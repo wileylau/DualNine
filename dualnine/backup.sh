@@ -1,7 +1,7 @@
 #!/sbin/sh
 
 SLOT=$(getprop ro.boot.slot_suffix)
-D9L="$D9L"
+D9L="/data/dualnine"
 mv $D9L/inactive/ $D9L/active/;
 mkdir -p $D9L/inactive/data/;
 pigz < "/dev/block/by-name/boot$SLOT" > $D9L/inactive/boot.img.gz
